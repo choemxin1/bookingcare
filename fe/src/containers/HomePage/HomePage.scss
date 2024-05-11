@@ -1,0 +1,281 @@
+  //reset slick slider css
+  .slick-prev {
+      left      : -10px !important;
+      z-index   : 10 !important;
+      height    : 48px !important;
+      width     : 44px !important;
+      background: #fff !important;
+      border    : 2px solid #d7d7d7 !important;
+
+      &:hover {
+          background: #eceaea !important;
+      }
+
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+      font-family: FontAwesome !important;
+      color      : red !important;
+      // content: "\f060" !important;
+  }
+
+  .slick-next {
+      right     : -10px !important;
+      z-index   : 10 !important;
+      height    : 48px !important;
+      width     : 44px !important;
+      background: #fff !important;
+      border    : 2px solid #d7d7d7 !important;
+
+      &:hover {
+          background: #eceaea !important;
+      }
+  }
+
+  .slick-disabled {
+      display: none !important;
+  }
+
+  .section-share {
+      &.section-specialty {
+          background: #f5f5f5;
+      }
+
+      &.section-outstanding-doctor {
+          background: #f5f5f5;
+      }
+      &.section-medical-facility {
+        background: #f5f5f5;
+    }
+      &.section-about {
+          height       : 500px !important;
+          border-top   : 1px solid #f5f5f5;
+          border-bottom: 1px solid #f5f5f5;
+      }
+
+      .section-body {
+          .section-customize {
+              .bg-image {
+                  width              : 278px;
+                  height             : 150px;
+                  background-position: center center;
+                  background-repeat  : no-repeat;
+                  background-size    : cover;
+                  background-color   : #eee;
+
+                  &.section-specialty {
+                      //   background-image: url('../../assets/specialty/co-xuong-khop.jpg');
+                  }
+
+                  &.section-medical-facility {
+                      //   background-image: url('../../assets/medical-facility/benh-vien-thu-cuc.jpg');
+                  }
+
+                  &.section-outstading-doctor {
+                      //   background-image: url('../../assets/outstanding-doctor/anh-dai-dien-bs.jpg');
+                      width        : 120px;
+                      height       : 120px;
+                      border-radius: 50%;
+                  }
+
+                  &.section-handbook {
+                      background-image: url('../../assets/handbook/handbook.jpg');
+
+                  }
+
+              }
+          }
+      }
+  }
+
+  .section-share {
+      height: 330px;
+
+      .section-container {
+          margin        : 0 100px;
+          display       : flex;
+          flex-direction: column;
+
+          .section-header {
+              height       : 60px;
+              margin-bottom: 30px;
+              padding-top  : 30px;
+
+              .title-section {
+                  font-size  : 22px;
+                  font-weight: 600;
+              }
+
+              .btn-section {
+                  float         : right;
+                  padding       : 10px 15px;
+                  border        : none;
+                  outline       : none;
+                  display       : block;
+                  background    : #ebebeb;
+                  color         : black;
+                  cursor        : pointer;
+                  text-transform: uppercase;
+
+                  &:hover {
+                      color     : #fff;
+                      background: #f7d800;
+                  }
+              }
+          }
+
+
+      }
+  }
+
+  .section-outstanding-doctor {
+      .outer-bg {
+          display        : flex;
+          justify-content: center;
+          margin-bottom  : 10px;
+      }
+
+      .section-customize {
+          padding: 5px;
+          cursor : pointer;
+
+          .customize-border {
+              border : 1px solid orange;
+              padding: 20px;
+          }
+      }
+  }
+
+  .home-footer {
+      text-align : center;
+      padding-top: 8px;
+
+      a {
+          text-decoration: unset;
+      }
+  }
+
+  .section-about {
+      padding: 0 100px;
+
+      .section-about-header {
+          padding    : 20px 10px;
+          font-size  : 22px;
+          font-weight: 600;
+      }
+
+      .section-about-content {
+          display: flex;
+          gap    : 15px;
+          width  : 100%;
+
+          .content-left {
+              width: 60%;
+          }
+
+          .content-right {
+              width: 40%;
+
+              p {
+                  text-align: justify;
+                  font-style: italic;
+                  padding   : 15px;
+              }
+          }
+      }
+  }
+.container-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 105000000;
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    outline: 0;
+   opacity: .7;
+   
+    background-color: #ccc;
+    .ring {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background: black;
+        border: 3px solid #3c3c3c;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 150px;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: #fff000;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-shadow: 0 0 10px #fff000;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    
+        &:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top: 3px solid #fff000;
+            border-right: 3px solid #fff000;
+            border-radius: 50%;
+            animation: animateC 2s linear infinite;
+        }
+    
+        span {
+            display: block;
+            position: absolute;
+            top: calc(50% - 2px);
+            left: 50%;
+            width: 50%;
+            height: 4px;
+            background: transparent;
+            transform-origin: left;
+            animation: animate 2s linear infinite;
+    
+            &:before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: #fff000;
+                top: -6px;
+                right: -8px;
+                box-shadow: 0 0 20px #fff000;
+            }
+        }
+    
+        @keyframes animateC {
+            0% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    
+        @keyframes animate {
+            0% {
+                transform: rotate(45deg);
+            }
+    
+            100% {
+                transform: rotate(405deg);
+            }
+        }
+    }
+}
